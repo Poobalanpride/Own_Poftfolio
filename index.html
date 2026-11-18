@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Poobalan | Finance &amp; Banking Professional</title>
+<meta name="description" content="Portfolio of Poobalan: MBA in Financial Technology, banking relationship executive, Puducherry.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#22364f; --ink:#1c2733; --muted:#5b6876; --line:#dde3ea;
+  --bg:#fafbfc; --panel:#f0f3f7; --accent:#3f7d8c;
+  --serif:"Fraunces",Georgia,serif; --sans:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+
+header{position:sticky;top:0;z-index:10;background:rgba(250,251,252,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font-family:var(--serif);font-weight:600;font-size:1.15rem;text-decoration:none;color:var(--navy)}
+nav{display:flex;gap:26px}
+nav a{text-decoration:none;font-size:.92rem;color:var(--muted);font-weight:500;transition:color .2s}
+nav a:hover{color:var(--navy)}
+
+.hero{padding:96px 0 84px}
+.hero .wrap{display:grid;grid-template-columns:1fr 240px;gap:56px;align-items:center}
+.hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(3rem,8vw,5.6rem);line-height:1;color:var(--navy);letter-spacing:-.02em;opacity:0;transform:translateY(14px);animation:rise .9s .1s forwards cubic-bezier(.2,.7,.2,1)}
+.hero .role{margin-top:22px;font-size:1.2rem;color:var(--muted);max-width:30em;opacity:0;animation:rise .9s .3s forwards}
+.hero .cta{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap;opacity:0;animation:rise .9s .5s forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+.btn{display:inline-block;padding:12px 24px;border-radius:6px;text-decoration:none;font-weight:600;font-size:.95rem;border:1px solid var(--navy);transition:background .2s,color .2s}
+.btn.primary{background:var(--navy);color:#fff}
+.btn.primary:hover{background:#17263a}
+.btn.ghost{color:var(--navy)}
+.btn.ghost:hover{background:var(--navy);color:#fff}
+.mono{aspect-ratio:4/5;background:var(--navy);border-radius:6px;display:grid;place-items:center;color:#fff;font-family:var(--serif);font-size:5.5rem;position:relative}
+.mono::after{content:"";position:absolute;inset:12px;border:1px solid rgba(255,255,255,.25);border-radius:3px}
+.mono img{width:100%;height:100%;object-fit:cover;border-radius:6px}
+
+section{padding:76px 0;border-top:1px solid var(--line)}
+.sec{display:grid;grid-template-columns:200px 1fr;gap:48px}
+h2{font-family:var(--serif);font-weight:600;font-size:1.6rem;color:var(--navy);line-height:1.2}
+.about p{font-size:1.15rem;max-width:34em}
+.facts{margin-top:30px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:34em}
+.facts div{border-left:2px solid var(--accent);padding-left:14px}
+.facts b{display:block;font-family:var(--serif);font-size:1.5rem;color:var(--navy);font-weight:600;line-height:1.2}
+.facts span{font-size:.85rem;color:var(--muted)}
+
+.item{padding:0 0 34px 28px;border-left:1px solid var(--line);position:relative}
+.item:last-child{padding-bottom:0}
+.item::before{content:"";position:absolute;left:-5px;top:9px;width:9px;height:9px;border-radius:50%;background:var(--accent)}
+.item h3{font-size:1.1rem;font-weight:600;color:var(--navy);line-height:1.4}
+.item .meta{font-size:.9rem;color:var(--muted);margin:2px 0 6px}
+.item p{color:#38444f;max-width:36em}
+.group{font-size:.95rem;color:var(--muted);margin:0 0 18px;font-weight:600}
+.group:not(:first-child){margin-top:40px}
+
+.skill{margin-bottom:24px;max-width:32em}
+.skill div{display:flex;justify-content:space-between;font-weight:600;margin-bottom:8px}
+.bar{height:6px;background:var(--panel);border-radius:3px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--navy);border-radius:3px;transition:width 1.2s cubic-bezier(.2,.7,.2,1)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:44px;max-width:34em}
+.two h3{font-size:1rem;color:var(--navy);margin-bottom:6px}
+.two p{color:#38444f;font-size:.98rem;line-height:1.6}
+
+.contact{background:var(--navy);color:#fff;border-top:0}
+.contact h2{color:#fff;font-size:clamp(1.8rem,4vw,2.6rem);max-width:14em}
+.contact p{margin-top:14px;color:#c4cfdb;max-width:32em}
+.links{margin-top:34px;display:flex;flex-wrap:wrap;gap:14px}
+.contact .btn{border-color:#fff;color:#fff}
+.contact .btn:hover{background:#fff;color:var(--navy)}
+.contact .btn.primary{background:#fff;color:var(--navy)}
+.contact .btn.primary:hover{background:#e6ecf2}
+.addr{margin-top:28px;font-size:.92rem;color:#9fb0c2}
+footer{padding:22px 0;text-align:center;font-size:.85rem;color:var(--muted)}
+
+@media(max-width:760px){
+  nav{gap:16px}
+  .hero{padding:56px 0}
+  .hero .wrap{grid-template-columns:1fr;gap:36px}
+  .mono{max-width:200px;order:-1}
+  .sec{grid-template-columns:1fr;gap:24px}
+  section{padding:56px 0}
+  .facts{grid-template-columns:1fr 1fr 1fr;gap:12px}
+  .two{grid-template-columns:1fr;gap:24px}
+}
+@media(max-width:480px){nav a:nth-child(n+4){display:none}}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .hero h1,.hero .role,.hero .cta{animation:none;opacity:1;transform:none}
+  .bar i{transition:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">Poobalan</a>
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Poobalan</h1>
+        <p class="role">MBA in Financial Technology, with hands-on banking experience in customer relationships and financial reporting.</p>
+        <div class="cta">
+          <a class="btn primary" href="#contact">Get in touch</a>
+          <a class="btn ghost" href="#experience">View experience</a>
+        </div>
+      </div>
+      <!-- To use your photo: replace the letter with <img src="photo.jpg" alt="Portrait of Poobalan"> -->
+      <div class="mono" aria-hidden="true">P</div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap sec about">
+      <h2>About</h2>
+      <div>
+        <p>I do things properly and give them full effort. My background combines finance, accounting and technology, and I enjoy building clear, efficient financial reports. I'm looking for an organisation where I can grow my career even stronger.</p>
+        <div class="facts">
+          <div><b>MBA</b><span>Financial Technology</span></div>
+          <div><b>7 mo</b><span>Banking experience</span></div>
+          <div><b>2</b><span>Industry internships</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap sec">
+      <h2>Experience</h2>
+      <div>
+        <p class="group">Work</p>
+        <div class="item">
+          <h3>Relationship Executive</h3>
+          <div class="meta">Bandhan Bank &middot; 7 months</div>
+          <p>Managed customer relationships and supported banking products and services.</p>
+        </div>
+
+        <p class="group">Internships</p>
+        <div class="item">
+          <h3>Front Desk Person</h3>
+          <div class="meta">SBI, Reddiyarpalayam &middot; 1 month</div>
+          <p>Analysed the bank's customer activities and their relationship with the RBI.</p>
+        </div>
+        <div class="item">
+          <h3>Insurance Intern</h3>
+          <div class="meta">Bajaj Allianz General Insurance &middot; 15 days</div>
+          <p>Learned how to treat valuable customers and identify the right customer for each product.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="wrap sec">
+      <h2>Education</h2>
+      <div>
+        <div class="item">
+          <h3>MBA, Financial Technology</h3>
+          <div class="meta">Pondicherry University &middot; 2021&ndash;2023 &middot; CGPA 7.1</div>
+        </div>
+        <div class="item">
+          <h3>B.Com (General)</h3>
+          <div class="meta">St Joseph's College of Arts and Science, Cuddalore &middot; 2018&ndash;2021 &middot; CGPA 7.0</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap sec">
+      <h2>Skills</h2>
+      <div>
+        <div class="skill"><div><span>MS Office</span><span>80%</span></div><div class="bar"><i data-w="80"></i></div></div>
+        <div class="skill"><div><span>Accounting knowledge</span><span>81%</span></div><div class="bar"><i data-w="81"></i></div></div>
+        <div class="two">
+          <div><h3>Languages</h3><p>English, Tamil</p></div>
+          <div><h3>Volunteering</h3><p>Rover in the SJC Unit. Earned the Rajya Puraskar (Governor's Award).</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Let's work together</h2>
+      <p>I'm open to opportunities in banking, finance and financial technology. Email or call me directly.</p>
+      <div class="links">
+        <a class="btn primary" href="mailto:poobalanpride@gmail.com">poobalanpride@gmail.com</a>
+        <a class="btn" href="tel:+917339590372">+91 73395 90372</a>
+      </div>
+      <p class="addr">Moolakulam, Puducherry</p>
+    </div>
+  </section>
+</main>
+
+<footer>&copy; <span id="y">2026</span> Poobalan</footer>
+
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+(function(){
+  var bars=document.querySelectorAll('.bar i');
+  function fill(b){b.style.width=b.dataset.w+'%'}
+  if(!('IntersectionObserver' in window)){bars.forEach(fill);return}
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){fill(e.target);io.unobserve(e.target)}});
+  },{threshold:.4});
+  bars.forEach(function(b){io.observe(b)});
+})();
+</script>
+</body>
+</html>
